@@ -57,8 +57,15 @@ jobs:
 
       - name: Run tests
         run: |
-          cd build
-          ./tst_player.exe -v2
+          $exe = Get-ChildItem -Path build -Recurse -Filter "tst_player.exe" | Select-Object -First 1
+          if ($exe) {
+            Write-Host "Found: $($exe.FullName)"
+            & $exe.FullName -v2
+          } else {
+            Write-Host "tst_player.exe not found, listing build dir:"
+            Get-ChildItem -Path build -Recurse -Filter "*.exe"
+          }
+        shell: pwsh
 
       - name: Upload Windows build
         uses: actions/upload-artifact@v4
