@@ -2,9 +2,9 @@
 #include <QObject>
 #include <QStringList>
 #include <QVariantList>
-#include "PlayerModel.h"
-#include "PlaylistManager.h"
-#include "DatabaseManager.h"
+#include "playermodel.h"
+#include "playlistmanager.h"
+#include "databasemanager.h"
 
 class PlayerViewModel : public QObject {
     Q_OBJECT

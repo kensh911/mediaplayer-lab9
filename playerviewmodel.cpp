@@ -1,4 +1,4 @@
-#include "PlayerViewModel.h"
+#include "playerviewmodel.h"
 #include <QDebug>
 #include <QUrl>
 #include <QFileInfo>

@@ -1,4 +1,4 @@
-#include "PlaylistManager.h"
+#include "playlistmanager.h"
 #include <QFileInfo>
 #include <QDebug>
 

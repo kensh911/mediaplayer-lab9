@@ -1,8 +1,8 @@
 #include <QtTest>
 #include <QSignalSpy>
-#include "../DatabaseManager.h"
-#include "../PlaylistManager.h"
-#include "../PlayerModel.h"
+#include "../databasemanager.h"
+#include "../playlistmanager.h"
+#include "../playermodel.h"
 
 // ── Модульные тесты ─────────────────────────────────────────────────────────
 

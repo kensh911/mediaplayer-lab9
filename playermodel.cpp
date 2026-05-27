@@ -1,4 +1,4 @@
-#include "PlayerModel.h"
+#include "playermodel.h"
 #include <QDebug>
 
 PlayerModel::PlayerModel(QObject *parent) : QObject(parent) {

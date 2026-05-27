@@ -10,14 +10,14 @@ qt_standard_project_setup(REQUIRES 6.5)
 
 qt_add_executable(appmediaplayer_lab9
     main.cpp
-    DatabaseManager.cpp
-    DatabaseManager.h
-    PlaylistManager.cpp
-    PlaylistManager.h
-    PlayerModel.cpp
-    PlayerModel.h
-    PlayerViewModel.cpp
-    PlayerViewModel.h
+    databasemanager.cpp
+    databasemanager.h
+    playlistmanager.cpp
+    playlistmanager.h
+    playermodel.cpp
+    playermodel.h
+    playerviewmodel.cpp
+    playerviewmodel.h
 )
 
 qt_add_qml_module(appmediaplayer_lab9
@@ -28,16 +28,6 @@ qt_add_qml_module(appmediaplayer_lab9
         PlayerPage.qml
         PlaylistPage.qml
         SettingsPage.qml
-        SOURCES databasemanager.h databasemanager.cpp
-        SOURCES databasemanager.h databasemanager.cpp
-        SOURCES databasemanager.h
-        SOURCES databasemanager.cpp
-        SOURCES playlistmanager.h playlistmanager.cpp
-        SOURCES playermodel.h playermodel.cpp
-        SOURCES playerviewmodel.h playerviewmodel.cpp
-        QML_FILES PlayerPage.qml
-        QML_FILES PlaylistPage.qml
-        QML_FILES SettingsPage.qml
 )
 
 set_target_properties(appmediaplayer_lab9 PROPERTIES
@@ -53,12 +43,11 @@ target_link_libraries(appmediaplayer_lab9 PRIVATE
     Qt6::Sql
 )
 
-# Тесты
 qt_add_executable(tst_player
     tests/tst_player.cpp
-    DatabaseManager.cpp
-    PlaylistManager.cpp
-    PlayerModel.cpp
+    databasemanager.cpp
+    playlistmanager.cpp
+    playermodel.cpp
 )
 
 set_target_properties(tst_player PROPERTIES

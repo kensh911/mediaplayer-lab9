@@ -2,7 +2,7 @@
 #include <QObject>
 #include <QStringList>
 #include <QDir>
-#include "DatabaseManager.h"
+#include "databasemanager.h"
 
 class PlaylistManager : public QObject {
     Q_OBJECT
